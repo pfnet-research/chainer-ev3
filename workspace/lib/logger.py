@@ -29,6 +29,7 @@ class Logger:
             self.f.write('{0:07d}.png {1}\n'.format(self.frame_id, label))
         else:
             self.f.write('{0:07d}.png\n'.format(self.frame_id))
+        self.f.flush()
         self.frame_id = self.frame_id + 1
 
     def close(self):
