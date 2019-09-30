@@ -65,17 +65,17 @@ void main_task(intptr_t unused) {
 
     while (1) {
       last_updated_time = get_time();
-      sprintf(lcdstr, "%08d", last_updated_time);
-      ev3_lcd_draw_string(lcdstr, 0, fonth * 5);
+      // sprintf(lcdstr, "%08d", last_updated_time);
+      // ev3_lcd_draw_string(lcdstr, 0, fonth * 5);
 
       uint8_t header = read_byte(serial);
-      sprintf(lcdstr, "header: %04d", header);
-      ev3_lcd_draw_string(lcdstr, 0, fonth * 6);
+      // sprintf(lcdstr, "header: %04d", header);
+      // ev3_lcd_draw_string(lcdstr, 0, fonth * 6);
       if (header != 255) continue;
 
       uint8_t cmd_id = read_byte(serial);
-      sprintf(lcdstr, "cmd_id: %04d", cmd_id);
-      ev3_lcd_draw_string(lcdstr, 0, fonth * 7);
+      // sprintf(lcdstr, "cmd_id: %04d", cmd_id);
+      // ev3_lcd_draw_string(lcdstr, 0, fonth * 7);
 
       if (cmd_id == 0) {
 	int motor_port = read_byte(serial);
