@@ -25,10 +25,10 @@
   ```
 
 # EV3の環境構築
-- Google Colabを利用したEV3アプリをビルド方法（TODO: 外部リンクを貼る）
+- Google Colabを利用したEV3アプリをビルド方法（TODO: テキストへのリンクを貼る）
 
 # Raspberry Pi 3の環境構築
-- Raspbianを利用した環境構築方法（TODO: 外部リンクを貼る）
+- Raspbianを利用した環境構築方法（TODO: テキストへのリンクを貼る）
 
   
 # サンプルコードの実行方法
