@@ -1,9 +1,9 @@
 # About
-レゴ&reg; マインドストーム&reg; EV3をRaspberry Pi 3 Model Bから制御するためのソフトウェア、
+レゴ&reg;マインドストーム&reg; EV3をRaspberry Pi 3 Model Bから制御するためのソフトウェア、
 及び、Chainerによる学習ベースのEV3制御のサンプルコードです。
 
 # 必要機材
-- 教育版レゴ&reg;マインドストーム&reg;EV3 一式 [参考製品](http://afrel-shop.com/shopdetail/000000000380/ct82/page1/recommend/)
+- 教育版レゴマインドストームEV3 一式 [参考製品](http://afrel-shop.com/shopdetail/000000000380/ct82/page1/recommend/)
 - EV3用バッテリー充電用DCアダプター 1個 [参考製品](http://afrel-shop.com/shopdetail/010002000001/ct122/page1/recommend/)
 - Raspberry Pi 3 Model B（ケース付きを推奨） 1個 [参考製品](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/)
 - USBケーブル (A - micro B、データ転送対応) 1個 [参考製品](https://www.elecom.co.jp/products/MPA-AMBR2U07BK.html) 
@@ -29,7 +29,7 @@
   - PC （Windows/Mac OS/Ubuntu） 1台（コマンドライン環境の使えるもの）
   - micro SDカード （32GB) 1枚
   - micro SD カードリーダー 1個 (PCに備え付けの場合は不要）
-  - 教育版レゴ&reg;マインドストーム&reg;EV3
+  - 教育版レゴマインドストーム EV3
   
 - 用意したPCにgitのインストールを行ってください。
 
