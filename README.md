@@ -25,12 +25,12 @@
   ```
 
 # EV3の環境構築
-- Google Colabを利用したEV3アプリをビルド方法（TODO: テキストへのリンクを貼る）
+- [こちらを参照](https://github.pfidev.jp/marumaru/chainer-ev3-public/blob/master/document/ev3_setup_old.md)
 
 # Raspberry Pi 3の環境構築
-- Raspbianを利用した環境構築方法（TODO: テキストへのリンクを貼る）
+- [こちらを参照](https://github.pfidev.jp/marumaru/chainer-ev3-public/blob/master/document/raspi_setup_old.md)
 
-  
+
 # サンプルコードの実行方法
 
 ## EV3ポート
