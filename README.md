@@ -27,10 +27,10 @@
   ```
 
 # EV3の環境構築
-- [こちらを参照](https://github.pfidev.jp/marumaru/chainer-ev3-public/blob/master/document/ev3_setup.md)
+- [こちらを参照](document/ev3_setup.md)
 
 # Raspberry Pi 3の環境構築
-- [こちらを参照](https://github.pfidev.jp/marumaru/chainer-ev3-public/blob/master/document/raspi_setup.md)
+- [こちらを参照](document/raspi_setup.md)
 
 
 # サンプルコードの実行方法
