@@ -2,7 +2,7 @@
 レゴ&reg;マインドストーム&reg; EV3をRaspberry Pi 3 Model Bから制御するためのソフトウェア、
 及び、Chainerによる学習ベースのEV3制御のサンプルコードです。
 
-# 必要機材
+# システムを構成する機材
 - 教育版レゴマインドストームEV3 一式 [参考製品](http://afrel-shop.com/shopdetail/000000000380/ct82/page1/recommend/)
 - EV3用バッテリー充電用DCアダプター 1個 [参考製品](http://afrel-shop.com/shopdetail/010002000001/ct122/page1/recommend/)
 - Raspberry Pi 3 Model B（ケース付きを推奨） 1個 [参考製品](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/)
@@ -12,6 +12,8 @@
 - EV3Console 1個 [参考製品](http://www.mindsensors.com/ev3-and-nxt/40-console-adapter-for-ev3)
 - モバイルバッテリー 1個 [参考製品](https://www.ankerjapan.com/item/A1263.html)
 - モバイルバッテリー充電用USBアダプタ 1個 
+- PC（ノート型PCを推奨）
+- 無線ネットワークアクセスポイント（PCとラズパイで同一ネットワーク内につなげて利用することを推奨）
 
 # システム構成
 ![my image](system.png)
@@ -25,10 +27,10 @@
   ```
 
 # EV3の環境構築
-- [こちらを参照](https://github.pfidev.jp/marumaru/chainer-ev3-public/blob/master/document/ev3_setup_old.md)
+- [こちらを参照](https://github.pfidev.jp/marumaru/chainer-ev3-public/blob/master/document/ev3_setup.md)
 
 # Raspberry Pi 3の環境構築
-- [こちらを参照](https://github.pfidev.jp/marumaru/chainer-ev3-public/blob/master/document/raspi_setup_old.md)
+- [こちらを参照](https://github.pfidev.jp/marumaru/chainer-ev3-public/blob/master/document/raspi_setup.md)
 
 
 # サンプルコードの実行方法
