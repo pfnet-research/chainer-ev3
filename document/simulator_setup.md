@@ -1,11 +1,12 @@
 # 概要
+`chainer-ev3/simulator2d`ではEV3の２次元シミュレーターを提供します。EV3の動作、カメラやカラーセンサーのシミュレーションを行います。
 
-
-# セットアップ方法
+# シミュレーターのセットアップ方法
+## 事前準備
+- コンソールを開いてコマンドラインベースでセットアップを行います。
 - 用意したPCにgitのインストールを行ってください。
 
 - pyenvのセットアップ
-
   ```
   $ git clone https://github.com/yyuu/pyenv.git ~/.pyenv
   $ echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.profile
@@ -32,13 +33,17 @@
   ```
   $ cd
   $ git clone git@/pfnet-research/chainer-ev3.git
+
+## サンプルコードを動作させるためのpython環境のセットアップ
+- pythonの必要パッケージを仮想環境にインストールします。
+  ```
   $ cd chainer-ev3/workspace
   $ pyenv virtualenv 3.6.8 chainer-ev3
   $ pyenv local chainer-ev3
   $ pip install --upgrade pip
   $ pip install -r requirements-sim.txt
   ```
-  ※ `pip`でインストールするファイルは`requirements.txt`ではないことに注意してください。
+  ※ pipでインストールするファイルはrequirements.txtではないことに注意してください。
 
 - JupyterLabを起動します。
   ```
@@ -48,3 +53,20 @@
   次のような画面がブラウザに出てきたら成功です。
   ![my image](jupyterlab.png)
   
+## シミュレーターのセットアップ
+- シミュレーターのセットアップを行います。 
+  ```
+  $ cd chainer-ev3/simulator2d
+  $ pyenv virtualenv 3.6.8 simulator2d
+  $ pyenv local simulator2d
+  $ pip install -r requirements.txt
+  $ python setup.py build_ext --inplace
+  ```
+  
+- シミュレーターを起動します。
+  ```
+  $ python main.py
+  ```
+  以下のような画面が出てきたら成功です。
+  ![my_image](simulator.png)
+ 
