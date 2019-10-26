@@ -1,6 +1,7 @@
-# About
+# 概要
 レゴ&reg;マインドストーム&reg; EV3をRaspberry Pi 3 Model Bから制御するためのソフトウェア、
 及び、Chainerによる学習ベースのEV3制御のサンプルコードです。
+EV3などの機材がなくてもシミュレーターでコードを動かすことも可能です。
 
 # システムを構成する機材
 - 教育版レゴマインドストームEV3 一式 [参考製品](http://afrel-shop.com/shopdetail/000000000380/ct82/page1/recommend/)
