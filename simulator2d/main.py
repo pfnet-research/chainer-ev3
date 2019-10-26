@@ -9,7 +9,7 @@ import math
 from threading import Thread
 
 import settings
-from geometry.point import Point
+from point import Point
 from env import EV3Env
 from renderer import Renderer
 

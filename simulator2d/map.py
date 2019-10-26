@@ -3,7 +3,7 @@ import numpy as np
 import cv2
 
 import settings
-from geometry.point import polarvec, Point
+from point import polarvec, Point
 
 
 class EV3Map:

@@ -2,7 +2,7 @@ import math
 import datetime as dt
 
 import settings
-from geometry.point import Point, polarvec
+from point import Point, polarvec
 
 
 def linear_map(x, start1, stop1, start2, stop2):

@@ -1,4 +1,4 @@
-from geometry.point import polarvec, Point
+from point import polarvec, Point
 import math
 import numpy as np
 import cv2
