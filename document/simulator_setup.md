@@ -54,6 +54,7 @@
   ![my image](jupyterlab.png)
   
 ## シミュレーターのセットアップ
+- JupyterLabを起動したコンソールとは別のコンソールを立ち上げて作業を行います。
 - シミュレーターのセットアップを行います。 
   ```
   $ cd chainer-ev3/simulator2d
