@@ -31,8 +31,8 @@
   
 - レポジトリのクローンとpython仮想環境の構築
   ```
-  $ cd
   $ git clone git@/pfnet-research/chainer-ev3.git
+  ```
 
 ## サンプルコードを動作させるためのpython環境のセットアップ
 - pythonの必要パッケージを仮想環境にインストールします。
