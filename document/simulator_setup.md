@@ -3,8 +3,8 @@
 
 # シミュレーターのセットアップ方法
 ## 事前準備
-- コンソールを開いてコマンドラインベースでセットアップを行います。
-- 用意したPCにgitのインストールを行ってください。
+- Python, pipコマンドが使える環境でコンソールを開いてコマンドラインベースでセットアップを行います。
+- gitがインストールされていない場合はインストールを行ってください。
 
 - pyenvのセットアップ
   ```
@@ -43,7 +43,7 @@
   $ pip install --upgrade pip
   $ pip install -r requirements-sim.txt
   ```
-  ※ pipでインストールするファイルはrequirements.txtではないことに注意してください。
+  ※ pipでインストールするファイルは`workspace/requirements.txt`ではないことに注意してください。
 
 - JupyterLabを起動します。
   ```
@@ -61,7 +61,6 @@
   $ pyenv virtualenv 3.6.8 simulator2d
   $ pyenv local simulator2d
   $ pip install -r requirements.txt
-  $ python setup.py build_ext --inplace
   ```
   
 - シミュレーターを起動します。
