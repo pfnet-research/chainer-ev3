@@ -68,7 +68,8 @@
   $ python main.py
   ```
   以下のような画面が出てきたら成功です。
-  ![my_image](simulator.png)
+  
+  <img src="simulator.png" width="400">
  
 
 # シミュレーターの使い方
