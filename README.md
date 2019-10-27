@@ -275,6 +275,9 @@ EV3のLCDに各角度で撮影した枚数が表示されます。各角度ご�
 `angle_prediction_predictor.py`で角度推定を行います。
 カメラでラインを撮影すると推定した角度がEV3のLCDに表示されます。
 
-
 # ライセンス
 このソースコードのライセンスはBSD 3-Clauseです。詳しくは[LICENSE](LICENSE.md)を参照してください。
+
+# テキスト
+サンプルコードの一部を公開テキストで解説しています。テキストのライセンスはBSD 3-Clauseとは異なりますので、テキストの利用規約に従ってご利用ください。
+https://github.com/pfnet-research/chainer-robotcar-text
