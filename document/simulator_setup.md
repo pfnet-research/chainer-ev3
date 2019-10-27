@@ -104,6 +104,15 @@
 - `r`: シミュレーターを初期状態に戻します。
 - `q`: シミュレーターを終了させます。
 
+## サンプルコードの動かし方例
+ここでは、EV3のタッチセンサーを押すことで走行を始め、カラーセンサーが黒の上に来たら走行を停止するサンプルコード`basic_stop_on_black.ipynb`を動かしてみます。
 
+1. シミュレーターのウインドウを立ち上げ、マウス操作でEV3を次のようにコースマップの中心付近の位置に移動させます。
+<img src="simulator_sample1.png" width="400">
 
+2. ブラウザで開いたJupyter Labの左側のリストから`basic_stop_on_black.ipynb`を選択します（以下の画面を参考）
+<img src="simulator_sample2.png" width="400">
 
+3. Jupyter Lab上で`basic_stop_on_black.ipynb`の実行を行います。（セルを選択して、SHIFT+ENTERか、UI上の実行ボタンをクリックしてください。）
+4. シミュレーターのウインドウ上で、`t`ボタンを押します。走行が開始され、黒線の上で停止することを確認してください。
+<img src="simulator_sample3.png" width="400">
