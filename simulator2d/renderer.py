@@ -84,6 +84,8 @@ class Renderer:
                    int(self.color_radius * self.scale_w), color, thickness)
 
     def draw_camera_frame(self, canvas, raw_camera_frame):
+        if raw_camera_frame is None:
+            return
         camera_frame = cv2.resize(raw_camera_frame, 
                                   (self.canvas_camera_w, self.canvas_camera_h))
         bgr_frame = cv2.cvtColor(camera_frame, cv2.COLOR_GRAY2RGB)

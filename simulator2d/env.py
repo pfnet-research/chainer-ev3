@@ -22,6 +22,16 @@ class EV3Env:
                              'h': self.settings.camera_h}
         self.touch_sensor = {'is_pressed': False,
                              'pressed_time': -1.}
+        self.enter_button = {'is_pressed': False,
+                             'pressed_time': -1.}
+        self.up_button = {'is_pressed': False,
+                          'pressed_time': -1.}
+        self.down_button = {'is_pressed': False,
+                            'pressed_time': -1.}
+        self.left_button = {'is_pressed': False,
+                            'pressed_time': -1.}
+        self.right_button = {'is_pressed': False,
+                             'pressed_time': -1.}
         self.lcd_messages = {0: '',
                              1: '',
                              2: '',
@@ -46,6 +56,17 @@ class EV3Env:
                                                       self.ev3_state.angle)
         if current_time - self.touch_sensor['pressed_time'] > 0.5:
             self.touch_sensor['is_pressed'] = False
+        if current_time - self.up_button['pressed_time'] > 0.25:
+            self.up_button['is_pressed'] = False
+        if current_time - self.down_button['pressed_time'] > 0.25:
+            self.down_button['is_pressed'] = False
+        if current_time - self.left_button['pressed_time'] > 0.25:
+            self.left_button['is_pressed'] = False
+        if current_time - self.right_button['pressed_time'] > 0.25:
+            self.right_button['is_pressed'] = False
+        if current_time - self.enter_button['pressed_time'] > 0.25:
+            self.enter_button['is_pressed'] = False
+
         self.last_updated_time = current_time
         time.sleep(0.01)
 
@@ -70,6 +91,20 @@ class EV3Env:
 
     def touch_sensor_is_pressed(self, sensor_port):
         return 1 if self.touch_sensor['is_pressed'] else 0
+
+    def button_is_pressed(self, button_id):
+        if button_id == 0:
+            return 1 if self.right_button['is_pressed'] else 0
+        elif button_id == 1:
+            return 1 if self.left_button['is_pressed'] else 0
+        elif button_id == 2:
+            return 1 if self.up_button['is_pressed'] else 0
+        elif button_id == 3:
+            return 1 if self.down_button['is_pressed'] else 0
+        elif button_id == 4:
+            return 1 if self.enter_button['is_pressed'] else 0
+        else:
+            raise NotImplementedError()
 
     def lcd_draw_string(self, string, row):
         assert(row < len(self.lcd_messages))
@@ -111,6 +146,26 @@ class EV3Env:
     def set_touch_sensor_state(self, is_pressed):
         self.touch_sensor['is_pressed'] = is_pressed
         self.touch_sensor['pressed_time'] = dt.now().timestamp()
+
+    def set_left_button_state(self, is_pressed):
+        self.left_button['is_pressed'] = is_pressed
+        self.left_button['pressed_time'] = dt.now().timestamp()
+
+    def set_right_button_state(self, is_pressed):
+        self.right_button['is_pressed'] = is_pressed
+        self.right_button['pressed_time'] = dt.now().timestamp()
+
+    def set_up_button_state(self, is_pressed):
+        self.up_button['is_pressed'] = is_pressed
+        self.up_button['pressed_time'] = dt.now().timestamp()
+
+    def set_down_button_state(self, is_pressed):
+        self.down_button['is_pressed'] = is_pressed
+        self.down_button['pressed_time'] = dt.now().timestamp()
+
+    def set_enter_button_state(self, is_pressed):
+        self.enter_button['is_pressed'] = is_pressed
+        self.enter_button['pressed_time'] = dt.now().timestamp()
 
     def reset(self):
         self.__init__()

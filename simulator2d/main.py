@@ -179,7 +179,15 @@ class Simulator:
                     buf += chr(r)
                 self.env.lcd_draw_string(buf, line)
                 continue
+
+            if cmd_id == 210:
+                button_id = self.ev3_com.read_byte()
+                button = self.env.button_is_pressed(button_id)
+                self.ev3_com.send_byte(button)
+                continue
+
             time.sleep(0.01)
+
 
     def vs_loop(self):
         while True:
@@ -223,6 +231,7 @@ class Simulator:
                 self.vs_com.send_image(img)
                 continue
             time.sleep(0.01)
+
 
 from PIL import Image
 
@@ -271,6 +280,16 @@ def main():
             if key == ord('t'):
                 # Push touch sensor
                 simulator.env.set_touch_sensor_state(is_pressed=True)
+            if key == ord('1'):
+                simulator.env.set_left_button_state(is_pressed=True)
+            if key == ord('2'):
+                simulator.env.set_right_button_state(is_pressed=True)
+            if key == ord('3'):
+                simulator.env.set_up_button_state(is_pressed=True)
+            if key == ord('4'):
+                simulator.env.set_down_button_state(is_pressed=True)
+            if key == ord('0'):
+                simulator.env.set_enter_button_state(is_pressed=True)
             time.sleep(0.01)
     except:
         simulator.stop()
