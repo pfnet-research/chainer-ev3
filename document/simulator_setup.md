@@ -23,10 +23,10 @@
 
 - Python3のセットアップ
 
-  Python3.6.8をインストール。
+  Pythonをインストール。
   ```
   $ source ~/.profile
-  $ pyenv install 3.6.8
+  $ pyenv install 3.8.5
   ```
   
 - レポジトリのクローンとpython仮想環境の構築
@@ -38,7 +38,7 @@
 - pythonの必要パッケージを仮想環境にインストールします。
   ```
   $ cd chainer-ev3/workspace
-  $ pyenv virtualenv 3.6.8 chainer-ev3
+  $ pyenv virtualenv 3.8.5 chainer-ev3
   $ pyenv local chainer-ev3
   $ pip install --upgrade pip
   $ pip install -r requirements-sim.txt
