@@ -82,7 +82,7 @@
 - パッケージツールのインストール
 
   ```
-  $ sudo apt install -y git gcc g++ make libssl-dev libbz2-dev libreadline-dev libsqlite3-dev zlib1g-dev libjpeg-dev
+  $ sudo apt install -y git gcc g++ make libssl-dev libbz2-dev libreadline-dev libsqlite3-dev zlib1g-dev libjpeg-dev libffi-dev
   ```
 
 - pyenvのセットアップ
@@ -103,10 +103,10 @@
 
 - Python3のセットアップ
 
-  Python3.6.8をインストール。
+  Python3.8.5をインストール。
   ```
   $ source ~/.profile
-  $ pyenv install 3.6.8
+  $ pyenv install 3.8.5
   ```
 
 - レポジトリのクローンとpython仮想環境の構築
@@ -115,7 +115,7 @@
   $ cd
   $ git clone git@/pfnet-research/chainer-ev3.git
   $ cd chainer-ev3/workspace
-  $ pyenv virtualenv 3.6.8 chainer-ev3
+  $ pyenv virtualenv 3.8.5 chainer-ev3
   $ pyenv local chainer-ev3
   $ pip install --upgrade pip
   $ pip install -r requirements_rpi.txt

@@ -1,5 +1,5 @@
-chainer==6.3.0
-Pillow==5.4.1
-pyserial==3.4
-jupyterlab==0.35.6
-picamera==1.13
+chainer
+Pillow
+pyserial
+jupyterlab
+picamera
