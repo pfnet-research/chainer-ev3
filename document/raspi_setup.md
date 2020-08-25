@@ -82,7 +82,7 @@
 - パッケージツールのインストール
 
   ```
-  $ sudo apt install -y git gcc g++ make libssl-dev libbz2-dev libreadline-dev libsqlite3-dev zlib1g-dev libjpeg-dev
+  $ sudo apt install -y git gcc g++ make libssl-dev libbz2-dev libreadline-dev libsqlite3-dev zlib1g-dev libjpeg-dev libffi-dev
   ```
 
 - pyenvのセットアップ
